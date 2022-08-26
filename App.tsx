@@ -1,9 +1,18 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import {
+  createNativeStackNavigator,
+  NativeStackNavigationProp,
+} from "@react-navigation/native-stack";
+
 import About from "./src/screens/About";
 import Home from "./src/screens/Home";
 
 const Stack = createNativeStackNavigator();
+
+export type NavigationProps = NativeStackNavigationProp<{
+  Home: {};
+  About: {};
+}>;
 
 export default function App() {
   return (

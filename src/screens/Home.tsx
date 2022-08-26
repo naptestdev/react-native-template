@@ -1,10 +1,12 @@
-import { FC } from "react";
-import { View, Text, Button } from "react-native";
-import { StatusBar } from "expo-status-bar";
 import { useNavigation } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
+import { FC } from "react";
+import { Button, Text, View } from "react-native";
+
+import { NavigationProps } from "../../App";
 
 const Home: FC = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProps>();
 
   return (
     <View className="flex-1 bg-white items-center justify-center">

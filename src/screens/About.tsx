@@ -1,6 +1,6 @@
-import { FC } from "react";
-import { View, Text } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import { FC } from "react";
+import { Text, View } from "react-native";
 
 const About: FC = () => {
   return (
